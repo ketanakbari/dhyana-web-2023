@@ -1,0 +1,224 @@
+.plans-compare-table {
+    background-color: var(--whiteColor);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, .05);
+
+    .table {
+        margin-bottom: 0;
+
+        >thead {
+            vertical-align: middle;
+
+            tr {
+                border: none;
+                background: linear-gradient(90deg,#ee0979 0%,#ff6a00 100%);
+
+                th {
+                    border: none;
+                    box-shadow: unset;
+                    color: var(--whiteColor);
+                    padding: 15px 30px;
+                    text-align: center;
+                    font: {
+                        size: 22px;
+                        weight: 600;
+                    };
+                    &:first-child {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+        >tbody {
+            tr {
+                transition: var(--transition);
+
+                td {
+                    box-shadow: unset;
+                    padding: 15px 30px;
+                    text-align: center;
+                    color: var(--optionalColor);
+                    border-bottom-color: #eaeef3;
+                    font: {
+                        size: 17px;
+                        weight: 500;
+                    };
+                    i {
+                        line-height: 1;
+                        font-size: 20px;
+                        color: #44cd6f;
+                        position: relative;
+                        top: 3px;
+                    }
+                    a {
+                        display: inline-block;
+                        color: var(--mainColor);
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    &:first-child {
+                        color: var(--blackColor);
+                        text-align: start;
+                    }
+                }
+                &:hover {
+                    background-color: #f9f9f9;
+                }
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        >tfoot {
+            vertical-align: middle;
+
+            tr {
+                border: none;
+                background: var(--mainColor);
+
+                td {
+                    box-shadow: unset;
+                    padding: 15px 30px;
+                    text-align: center;
+                    color: var(--whiteColor);
+                    border-bottom-color: #eaeef3;
+                    font: {
+                        size: 17px;
+                        weight: 500;
+                    };
+                    a {
+                        color: var(--whiteColor);
+                    }
+                    .link-btn {
+                        width: 100%;
+                        display: block;
+                        border-radius: 5px;
+                        padding: 12px 30px;
+                        text-align: center;
+                        color: var(--blackColor);
+                        background-color: var(--whiteColor);
+                        font: {
+                            weight: 600;
+                            size: var(--fontSize);
+                            family: var(--fontFamily2);
+                        };
+                        &:hover {
+                            transform: translateY(-2px);
+                        }
+                    }
+                    &:first-child {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+    .table > :not(:first-child) {
+        border-top: none;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .plans-compare-table {
+        .table > {
+            thead {
+                tr {
+                    th {
+                        padding: 10px 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        padding: 10px 20px;
+                        font-size: 15px;
+
+                        i {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            tfoot {
+                tr {
+                    td {
+                        white-space: nowrap;
+                        padding: 10px 20px;
+                        font-size: 15px;
+
+                        .link-btn {
+                            padding: 10px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .plans-compare-table {
+        .table > {
+            thead {
+                tr {
+                    th {
+                        font-size: 20px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 16px;
+                    }
+                }
+            }
+            tfoot {
+                tr {
+                    td {
+                        font-size: 16px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .plans-compare-table {
+        .table > {
+            tfoot {
+                tr {
+                    td {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

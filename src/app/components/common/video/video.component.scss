@@ -1,0 +1,94 @@
+.video-style-area {
+    background: {
+        image: url(../../../../assets/img/cybersecurity-home/video-bg.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        top: 280px;
+        bottom: 280px;
+    };
+}
+.video-view-content {
+    text-align: center;
+    
+    .video-btn {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        background-color: var(--whiteColor);
+        border-radius: 50%;
+        color: var(--mainColor);
+        text-align: center;
+        font-size: 65px;
+        transition: var(--transition);
+        position: relative;
+        padding: 0;
+        border: none;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            border: 1px solid var(--whiteColor);
+            animation: ripple 5s linear infinite;
+        }
+        &:hover {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .video-style-area {
+        padding: {
+            top: 150px;
+            bottom: 150px;
+        };
+    }
+    .video-view-content {
+        .video-btn {
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            font-size: 45px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .video-style-area {
+        padding: {
+            top: 150px;
+            bottom: 150px;
+        };
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

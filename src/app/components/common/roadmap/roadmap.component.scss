@@ -1,0 +1,133 @@
+.single-roadmap-box {
+    border-left: 2px dashed var(--mainColor);
+    border-bottom: 2px dashed var(--mainColor);
+    position: relative;
+    padding: 30px;
+
+    &::before {
+        left: -6px;
+        content: '';
+        width: 10px;
+        bottom: -6px;
+        height: 10px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: var(--mainColor);
+    }
+    span {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: var(--mainColor);
+    }
+    h3 {
+        margin-bottom: 12px;
+        font: {
+            size: 24px;
+            weight: 600;
+        };
+    }
+}
+.col-lg-4 {
+    &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+        .single-roadmap-box {
+            border-bottom-width: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-roadmap-box {
+        border-width: 1px;
+        padding: 20px;
+    
+        &::before {
+            left: -5px;
+            bottom: -5px;
+        }
+        span {
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+    .col-lg-4 {
+        &:nth-child(4), &:nth-child(5) {
+            .single-roadmap-box {
+                border-bottom-width: 1px;
+    
+                &::before {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .col-lg-4 {
+        &:nth-child(5) {
+            .single-roadmap-box {
+                border-bottom-width: 0;
+    
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .single-roadmap-box {
+        padding: 25px;
+    
+        span {
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .col-lg-4 {
+        &:nth-child(4) {
+            .single-roadmap-box {
+                border-bottom-width: 2px;
+    
+                &::before {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .single-roadmap-box {
+        padding: 25px;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,109 @@
+@import "../../common/case-studies/case-studies.component.scss";
+
+.page-title-content {
+    .clients-list {
+        max-width: 820px;
+        text-align: center;
+        margin: {
+            top: 25px;
+            left: auto;
+            right: auto;
+        };
+        span {
+            display: block;
+            letter-spacing: 1px;
+            color: var(--optionalColor);
+        }
+        .box {
+            animation: border-transform 15s linear infinite alternate forwards;
+            box-shadow: 0 5px 15px rgba(107, 124, 147, .05);
+            background-color: var(--whiteColor);
+            text-align: center;
+            line-height: 95px;
+            height: 100px;
+            width: 100px;
+            margin: {
+                top: 30px;
+                left: auto;
+                right: auto;
+            };
+            img {
+                transition: var(--transition);
+            }
+            &.hover {
+                img {
+                    filter: blur(2px);
+                    opacity: 0.4;
+                }
+                &:hover {
+                    img {
+                        filter: blur(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .page-title-content {
+        .clients-list {
+            max-width: 100%;
+            margin-top: 20px;
+
+            .box {
+                line-height: 75px;
+                height: 80px;
+                width: 80px;
+
+                a {
+                    img {
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .page-title-content {
+        .clients-list {
+            padding: {
+                left: 30px;
+                right: 30px;
+            };
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .page-title-content {
+        .clients-list {
+            .box {
+                line-height: 85px;
+                height: 95px;
+                width: 95px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

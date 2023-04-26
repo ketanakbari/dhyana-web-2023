@@ -1,0 +1,544 @@
+<!-- Default Team Section for this Template -->
+<div
+    class="team-area bg-gradient-image ptb-100"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4' || router.url === '/index-5' || router.url === '/index-6'}"
+>
+    <div class="container">
+        <div class="section-title style-two">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <span class="sub-title">OUR EXPERTS</span>
+                    <h2>Meet Our Leadership <br>Preparing For Your Success</h2>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. It is a long established fact that a reader will be distracted by the.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-slides">
+            <owl-carousel-o [options]="teamSlides">
+                <ng-template carouselSlide>
+                    <div class="single-team-box">
+                        <div class="image">
+                            <div class="bg-1"></div>
+                        </div>
+                        <div class="content">
+                            <h3>Sarah Taylor</h3>
+                            <span>Marketing Lead</span>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-box">
+                        <div class="image">
+                            <div class="bg-2"></div>
+                        </div>
+                        <div class="content">
+                            <h3>Ben Stokes</h3>
+                            <span>Art Director</span>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-box">
+                        <div class="image">
+                            <div class="bg-3"></div>
+                        </div>
+                        <div class="content">
+                            <h3>Ellyse Perry</h3>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-box">
+                        <div class="image">
+                            <div class="bg-4"></div>
+                        </div>
+                        <div class="content">
+                            <h3>Steven Smith</h3>
+                            <span>Development</span>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-box">
+                        <div class="image">
+                            <div class="bg-5"></div>
+                        </div>
+                        <div class="content">
+                            <h3>Suzie Bates</h3>
+                            <span>Front-End Development</span>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-box">
+                        <div class="image">
+                            <div class="bg-6"></div>
+                        </div>
+                        <div class="content">
+                            <h3>David Warner</h3>
+                            <span>Head of Team</span>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Team Section for Home Demo - 2 -->
+<div
+    class="team-area bg-gradient-image ptb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="team-member-list">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="single-team-member">
+                                <img src="assets/img/team/team12.jpg" alt="team">
+                                <div class="content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3>Ben Stokes</h3>
+                                        <span>Marketing Lead</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="single-team-member">
+                                <img src="assets/img/team/team13.jpg" alt="team">
+                                <div class="content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3>Sarah Taylor</h3>
+                                        <span>Art Director</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="single-team-member">
+                                <img src="assets/img/team/team14.jpg" alt="team">
+                                <div class="content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3>Ellyse Perry</h3>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="single-team-member">
+                                <img src="assets/img/team/team15.jpg" alt="team">
+                                <div class="content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3>Steven Smith</h3>
+                                        <span>Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="team-section-title">
+                    <span class="sub-title">OUR EXPERTS</span>
+                    <h2>Meet Our Leadership <br>Preparing For Your Success</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                    <a routerLink="/team" class="default-btn style-two">
+                        <span class="ri-arrow-right-s-line"></span>
+                        Meet Our Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Section for Home Demo - 4 -->
+<div
+    class="team-member-area pt-100 pb-70 d-none"
+    [ngClass]="{'d-block': router.url === '/index-4'}"
+>
+    <div class="container">
+        <div class="section-title with-max-width">
+            <h2>Our Team Member</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-member-card">
+                    <div class="team-image">
+                        <img src="assets/img/cybersecurity-home/team/team-1.jpg" alt="image">
+                        <div class="social-btn">
+                            <span><i class="ri-share-line"></i></span>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/envato" target="_blank">
+                                        <i class="ri-facebook-line"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Larry Hofmann</h3>
+                        <span>Technology Officer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-member-card">
+                    <div class="team-image">
+                        <img src="assets/img/cybersecurity-home/team/team-2.jpg" alt="image">
+                        <div class="social-btn">
+                            <span><i class="ri-share-line"></i></span>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/envato" target="_blank">
+                                        <i class="ri-facebook-line"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Gail Douthitt</h3>
+                        <span>Businesss Advisor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-member-card">
+                    <div class="team-image">
+                        <img src="assets/img/cybersecurity-home/team/team-3.jpg" alt="image">
+                        <div class="social-btn">
+                            <span><i class="ri-share-line"></i></span>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/envato" target="_blank">
+                                        <i class="ri-facebook-line"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Patricia Conlon</h3>
+                        <span>Creative Director</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-member-card">
+                    <div class="team-image">
+                        <img src="assets/img/cybersecurity-home/team/team-4.jpg" alt="image">
+                        <div class="social-btn">
+                            <span><i class="ri-share-line"></i></span>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/envato" target="_blank">
+                                        <i class="ri-facebook-line"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <h3>Danette Rushing</h3>
+                        <span>Executive Officer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-member-shape"><img src="assets/img/cybersecurity-home/team/shape.png" alt="image"></div>
+</div>
+
+<!-- Team Section for Home Demo - 5 & 6 -->
+<div
+    class="d-none"
+    [ngClass]="{'d-block': router.url === '/index-5' || router.url === '/index-6'}"
+>
+    <div class="team-member-area pb-70">
+        <div class="container">
+            <div class="section-title with-max-width">
+                <h2>Our Team Member</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member-card">
+                        <div class="team-image">
+                            <img src="assets/img/cybersecurity-home/team/team-1.jpg" alt="image">
+                            <div class="social-btn">
+                                <span><i class="ri-share-line"></i></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/envato" target="_blank">
+                                            <i class="ri-facebook-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Larry Hofmann</h3>
+                            <span>Technology Officer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member-card">
+                        <div class="team-image">
+                            <img src="assets/img/cybersecurity-home/team/team-2.jpg" alt="image">
+                            <div class="social-btn">
+                                <span><i class="ri-share-line"></i></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/envato" target="_blank">
+                                            <i class="ri-facebook-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Gail Douthitt</h3>
+                            <span>Businesss Advisor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member-card">
+                        <div class="team-image">
+                            <img src="assets/img/cybersecurity-home/team/team-3.jpg" alt="image">
+                            <div class="social-btn">
+                                <span><i class="ri-share-line"></i></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/envato" target="_blank">
+                                            <i class="ri-facebook-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Patricia Conlon</h3>
+                            <span>Creative Director</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member-card">
+                        <div class="team-image">
+                            <img src="assets/img/cybersecurity-home/team/team-4.jpg" alt="image">
+                            <div class="social-btn">
+                                <span><i class="ri-share-line"></i></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/envato" target="_blank">
+                                            <i class="ri-facebook-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Danette Rushing</h3>
+                            <span>Executive Officer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-member-area pb-70">
+        <div class="container">
+            <div class="section-title with-max-width">
+                <h2>Our Leadership</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="team-member-card">
+                        <div class="team-image">
+                            <img src="assets/img/cybersecurity-home/team/team-5.jpg" alt="image">
+                            <div class="social-btn">
+                                <span><i class="ri-share-line"></i></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/envato" target="_blank">
+                                            <i class="ri-facebook-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Michael Latshaw</h3>
+                            <span>Deputy CEO & Co-founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="team-member-card">
+                        <div class="team-image">
+                            <img src="assets/img/cybersecurity-home/team/team-6.jpg" alt="image">
+                            <div class="social-btn">
+                                <span><i class="ri-share-line"></i></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/envato" target="_blank">
+                                            <i class="ri-facebook-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Joseph Heckman</h3>
+                            <span>CIO & Co-founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="team-member-card">
+                        <div class="team-image">
+                            <img src="assets/img/cybersecurity-home/team/team-7.jpg" alt="image">
+                            <div class="social-btn">
+                                <span><i class="ri-share-line"></i></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/envato" target="_blank">
+                                            <i class="ri-facebook-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Kenneth Coleman</h3>
+                            <span>Chief Product Officer & Co-founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,241 @@
+.pre-token-sale-ends-content {
+    background: #F4F6FB;
+    border-radius: 25px;
+    position: relative;
+    padding: 50px;
+    z-index: 1;
+
+    h3 {
+        line-height: 1.4;
+        margin-bottom: 20px;
+        font: {
+            size: 38px;
+            weight: 500;
+        };
+    }
+    #timer {
+        background-color: var(--whiteColor);
+        border: 1px solid var(--mainColor);
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+
+        div {
+            color: var(--mainColor);
+            margin-right: 45px;
+            font: {
+                size: 40px;
+                weight: bold;
+            };
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                display: block;
+                margin-top: -2px;
+                color: var(--optionalColor);
+                font: {
+                    size: 15.5px;
+                    weight: 500;
+                };
+            }
+        }
+    }
+    p {
+        margin: {
+            top: 12px;
+            bottom: 0;
+        };
+    }
+    .pre-token-sale-ends-with-progress {
+        margin-top: 20px;
+
+        .top-list {
+            padding-left: 0;
+            margin-bottom: 10px;
+            list-style-type: none;
+
+            li {
+                color: var(--mainColor);
+            }
+        }
+        .progress-wrapper {
+            position: relative;
+
+            .progress {
+                background-color: #e1e1e1;
+                border-radius: 50px;
+            }
+            .progress-bar {
+                background-color: var(--mainColor);
+                border-radius: 50px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 15px;
+                width: 1px;
+                height: 30px;
+                z-index: -1;
+                background-color: var(--blackColor);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 15px;
+                width: 1px;
+                z-index: -1;
+                height: 30px;
+                background-color: var(--blackColor);
+            }
+        }
+        .bottom-list {
+            padding-left: 0;
+            list-style-type: none;
+            margin: {
+                bottom: 0;
+                top: 20px;
+            };
+            li {
+                color: var(--optionalColor);
+            }
+        }
+    }
+    .pre-token-sale-ends-btn {
+        list-style-type: none;
+        padding-left: 0;
+        margin: {
+            top: 25px;
+            bottom: 0;
+        };
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            color: var(--optionalColor);
+
+            &:last-child {
+                margin-right: 0;
+            }
+            .buy-token-btn {
+                display: inline-block;
+                padding: 10.8px 30px;
+                background-color: #2E3433;
+                color: var(--whiteColor);
+                border-radius: 5px;
+                transition: var(--transition);
+                font: {
+                    family: var(--fontFamily2);
+                    size: var(--fontSize);
+                    weight: 500;
+                };
+                &:hover {
+                    background-color: var(--mainColor);
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+    .pre-token-sale-ends-shape {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        z-index: -1;
+        max-width: 50px;
+        animation: moveleftbounce 5s linear infinite;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .pre-token-sale-ends-content {
+        padding: 30px 20px;
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+        #timer {
+            padding: 12px;
+    
+            div {
+                font-size: 20px;
+                margin-right: 15px;
+                
+                span {
+                    font-size: 14.5px;
+                }
+            }
+        }
+        .pre-token-sale-ends-btn {
+            li {
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .pre-token-sale-ends-shape {
+            display: none;
+        }
+    }
+    .pre-token-sale-ends-image {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .pre-token-sale-ends-content {
+        #timer {
+            div {
+                font-size: 38px;
+                margin-right: 45px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .pre-token-sale-ends-content {
+        padding: 40px 20px;
+    }
+    .pre-token-sale-ends-image {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .pre-token-sale-ends-content {
+        padding: 30px 20px;
+
+        #timer {
+            div {
+                margin-right: 30px;
+            }
+        }
+        .pre-token-sale-ends-shape {
+            display: none;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

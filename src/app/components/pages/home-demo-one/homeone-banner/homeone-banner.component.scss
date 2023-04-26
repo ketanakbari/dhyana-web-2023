@@ -1,0 +1,183 @@
+.main-banner-area {
+    z-index: 1;
+    position: relative;
+    padding-top: 100px;
+    background: {
+        image: url(../../../../../assets/img/bg/bg8.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+}
+.main-banner-content {
+    .sub-title {
+        display: block;
+        margin-bottom: 10px;
+        letter-spacing: 1.5px;
+        color: var(--mainColor);
+        font: {
+            size: 16px;
+            weight: 300;
+        };
+    }
+    h1 {
+        margin-bottom: 15px;
+        font-size: 60px;
+    }
+    .default-btn {
+        margin-top: 15px;
+    }
+}
+.main-banner-image {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: {
+        top: 50px;
+        right: 30px;
+    };
+    &::before {
+        width: 745px;
+        height: 745px;
+        content: '';
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        border-radius: 50%;
+        right: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, .25);
+        animation: border-transform 10s linear infinite alternate forwards;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .shape {
+        position: absolute;
+        left: 17%;
+        top: 8%;
+
+        img {
+            animation: movebounce 5s linear infinite;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .main-banner-area {
+        padding-top: 60px;
+    }
+    .main-banner-content {
+        text-align: center;
+
+        .sub-title {
+            font-size: 13px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .main-banner-image {
+        margin-top: 30px;
+        padding: {
+            top: 0;
+            right: 0;
+        };
+        &::before {
+            display: none;
+        }
+        .shape {
+            display: none;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .main-banner-area {
+        padding-top: 80px;
+    }
+    .main-banner-content {
+        text-align: center;
+
+        .sub-title {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .main-banner-image {
+        padding-right: 0;
+        margin-top: 30px;
+
+        &::before {
+            width: 695px;
+            height: 695px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .main-banner-content {
+        h1 {
+            font-size: 48px;
+        }
+    }
+    .main-banner-image {
+        &::before {
+            width: 535px;
+            height: 535px;
+        }
+        .shape {
+            width: 120px;
+            left: 16%;
+            top: 17%;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .main-banner-content {
+        h1 {
+            font-size: 58px;
+        }
+    }
+    .main-banner-image {
+        &::before {
+            width: 640px;
+            height: 640px;
+        }
+        .shape {
+            width: 120px;
+            left: 16%;
+            top: 17%;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
