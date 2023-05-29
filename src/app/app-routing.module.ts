@@ -4,12 +4,7 @@ import { AboutPageComponent } from './components/pages/about-page/about-page.com
 import { BlogDetailsPageComponent } from './components/pages/blog-details-page/blog-details-page.component';
 import { BlogPageComponent } from './components/pages/blog-page/blog-page.component';
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
-import { HomeDemoFiveComponent } from './components/pages/home-demo-five/home-demo-five.component';
-import { HomeDemoFourComponent } from './components/pages/home-demo-four/home-demo-four.component';
 import { HomeDemoOneComponent } from './components/pages/home-demo-one/home-demo-one.component';
-import { HomeDemoSixComponent } from './components/pages/home-demo-six/home-demo-six.component';
-import { HomeDemoThreeComponent } from './components/pages/home-demo-three/home-demo-three.component';
-import { HomeDemoTwoComponent } from './components/pages/home-demo-two/home-demo-two.component';
 import { NotFoundPageComponent } from './components/pages/not-found-page/not-found-page.component';
 import { PricingPageComponent } from './components/pages/pricing-page/pricing-page.component';
 import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
@@ -24,11 +19,6 @@ import { WorkStyleTwoPageComponent } from './components/pages/work-style-two-pag
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
-    {path: 'index-2', component: HomeDemoTwoComponent},
-    {path: 'index-3', component: HomeDemoThreeComponent},
-    {path: 'index-4', component: HomeDemoFourComponent},
-    {path: 'index-5', component: HomeDemoFiveComponent},
-    {path: 'index-6', component: HomeDemoSixComponent},
     {path: 'about-us', component: AboutPageComponent},
     {path: 'services', component: ServicesDetailsPageComponent},
     {path: 'more-services', component: ServicesPageComponent},

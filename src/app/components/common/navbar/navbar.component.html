@@ -1,1375 +1,168 @@
 <!-- Default Header -->
-<header
-    class="header-area"
-    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4' || router.url === '/index-5' || router.url === '/index-6'}"
->
-    
-    <div class="top-header-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 col-md-6">
-                    <div class="top-header-start d-flex align-items-center">
-                        <a routerLink="/" class="logo d-none d-lg-inline-block">
-                            <img src="assets/img/logo.png" alt="logo">
-                        </a>
-                        <form class="search-box">
+<header class="header-area">
+
+  <div class="top-header-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-6">
+          <div class="top-header-start d-flex align-items-center">
+            <a routerLink="/" class="logo d-none d-lg-inline-block">
+              <img src="assets/dss-img/logo.png" alt="logo" width="120">
+            </a>
+            <!-- <form class="search-box">
                             <label><i class="ri-search-line"></i></label>
                             <input type="text" class="input-search" placeholder="Search here...">
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="top-header-end">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="number">
+                        </form> -->
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="top-header-end">
+            <div class="d-flex align-items-center justify-content-end">
+              <!-- <div class="number">
                                 <a href="tel:+1-485-456-0102" class="d-flex align-items-center"><i class="ri-phone-line"></i> +1-485-456-0102</a>
-                            </div>
-                            <ul class="social-links">
-                                <li><a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
-                                <li><a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-box-fill"></i></a></li>
-                                <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                            </div> -->
+              <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=100090827786133" target="_blank"><i
+                      class="ri-facebook-box-fill"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/87446052/" target="_blank"><i
+                      class="ri-linkedin-box-fill"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
-            <div class="container">
-                <a class="navbar-brand d-lg-none" routerLink="/">
-                    <img src="assets/img/logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" (click)="toggleClass()">
-                    <span class="burger-menu">
-                        <span class="top-bar"></span>
-                        <span class="middle-bar"></span>
-                        <span class="bottom-bar"></span>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav for-responsive">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="others-option">
-                        <a routerLink="/contact" class="default-btn style-two">
-                            <span class="ri-edit-2-line"></span>
-                            Get A Free Quote
-                        </a>
-                    </div>
-                    <div class="others-option for-responsive">
-                        <a routerLink="/contact" class="default-btn style-two" (click)="toggleClass()">
-                            <span class="ri-edit-2-line"></span>
-                            Get A Free Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-</header>
-
-<!-- Header for Home Demo 2 & 3 -->
-<header
-    class="header-area header-style-two d-none"
-    [ngClass]="{'d-block': router.url === '/index-2' || router.url === '/index-3'}"
->
-
-    <div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
-            <div class="container">
-                <a class="navbar-brand" routerLink="/">
-                    <img src="assets/img/logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" (click)="toggleClass()">
-                    <span class="burger-menu">
-                        <span class="top-bar"></span>
-                        <span class="middle-bar"></span>
-                        <span class="bottom-bar"></span>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav for-responsive">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="others-option">
-                        <a routerLink="/contact" class="default-btn style-two">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                    <div class="others-option for-responsive">
-                        <a routerLink="/contact" class="default-btn style-two" (click)="toggleClass()">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-</header>
-
-<!-- Header for Home Demo 4 -->
-<header
-    class="header-area  header-style-three d-none"
-    [ngClass]="{'d-block': router.url === '/index-4'}"
->
-    
-    <div class="top-header-black-area">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-7 col-sm-7">
-                    <div class="top-header-black-info">
-                        <li>
-                            <i class="ri-phone-line"></i>
-                            <a href="tel:15143125678">+1 (514) 312-5678</a>
-                        </li>
-                        <li>
-                            <i class="ri-mail-line"></i>
-                            <a href="mailto:hello@onux.com">hello@onux.com</a>
-                        </li>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-sm-5">
-                    <ul class="top-header-black-social-links">
-                        <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ri-instagram-line"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+  <div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" routerLink="/">
+          <img src="assets/dss-img/logo.png" alt="logo" width="120">
+        </a>
+        <button class="navbar-toggler" type="button" (click)="toggleClass()">
+          <span class="burger-menu">
+            <span class="top-bar"></span>
+            <span class="middle-bar"></span>
+            <span class="bottom-bar"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a routerLink="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/about-us" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">About Us</a>
+            </li>
+            <li class="nav-item megamenu">
+              <a routerLink="/services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Work Style #1</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Work Style #2 – Default</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Work Style #3 - Extra</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/work-details" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Work Details</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/team" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Team</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/pricing" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/blog" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav for-responsive">
+            <li class="nav-item">
+              <a routerLink="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/about-us" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">About Us</a>
+            </li>
+            <li class="nav-item megamenu">
+              <a routerLink="/services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #1</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #2 – Default</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #3 - Extra</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/work-details" class="nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Details</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                (click)="toggleClass()">Team</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/pricing" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                (click)="toggleClass()">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact</a>
+            </li>
+          </ul>
+          <div class="others-option">
+            <a routerLink="/contact" class="default-btn style-two">
+              <span class="ri-edit-2-line"></span>
+              Get A Free Quote
+            </a>
+          </div>
+          <div class="others-option for-responsive">
+            <a routerLink="/contact" class="default-btn style-two" (click)="toggleClass()">
+              <span class="ri-edit-2-line"></span>
+              Get A Free Quote
+            </a>
+          </div>
         </div>
-    </div>
-
-    <div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
-            <div class="container-fluid">
-                <a class="navbar-brand" routerLink="/">
-                    <img src="assets/img/logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" (click)="toggleClass()">
-                    <span class="burger-menu">
-                        <span class="top-bar"></span>
-                        <span class="middle-bar"></span>
-                        <span class="bottom-bar"></span>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav for-responsive">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="others-option">
-                        <a routerLink="/contact" class="default-btn style-two">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                    <div class="others-option for-responsive">
-                        <a routerLink="/contact" class="default-btn style-two" (click)="toggleClass()">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-</header>
-
-<!-- Header for Home Demo 5 -->
-<header
-    class="header-area header-style-four d-none"
-    [ngClass]="{'d-block': router.url === '/index-5'}"
->
-    
-    <div class="value-trade-area">
-        <div class="container-fluid">
-            <div class="value-trade-slides">
-                <div class="row justify-content-center">
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-1.png" alt="image">
-                            <h3><span>Bitcoin</span> $38,320.15</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-2.png" alt="image">
-                            <h3><span>Ethereum</span> $2,537.37</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-3.png" alt="image">
-                            <h3><span>Tether</span> $1.00</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-4.png" alt="image">
-                            <h3><span>BNB</span> $375.28</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-5.png" alt="image">
-                            <h3><span>XRP</span> $0.7435</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-6.png" alt="image">
-                            <h3><span>Terra</span> $81.47</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-7.png" alt="image">
-                            <h3><span>Cardano</span> $0.8151</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-8.png" alt="image">
-                            <h3><span>Avalanche</span> $74.02</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-9.png" alt="image">
-                            <h3><span>Dogecoin</span> $0.1199</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-10.png" alt="image">
-                            <h3><span>USD Coin</span> $0.9996</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-11.png" alt="image">
-                            <h3><span>Cosmos</span> $27.82</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 col-4 col-sm-2 col-lg-2">
-                        <div class="value-trade-card">
-                            <img src="assets/img/cryptocurrency-home/value-trade/trade-4.png" alt="image">
-                            <h3><span>BNB</span> $375.28</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
-            <div class="container-fluid">
-                <a class="navbar-brand" routerLink="/">
-                    <img src="assets/img/logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" (click)="toggleClass()">
-                    <span class="burger-menu">
-                        <span class="top-bar"></span>
-                        <span class="middle-bar"></span>
-                        <span class="bottom-bar"></span>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav for-responsive">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="others-option">
-                        <a routerLink="/contact" class="default-btn style-two">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                    <div class="others-option for-responsive">
-                        <a routerLink="/contact" class="default-btn style-two" (click)="toggleClass()">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-</header>
-
-<!-- Header for Home Demo 6 -->
-<header
-    class="header-area bg-black d-none"
-    [ngClass]="{'d-block': router.url === '/index-6'}"
->
-
-    <div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
-            <div class="container-fluid">
-                <a class="navbar-brand" routerLink="/">
-                    <img src="assets/img/white-logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" (click)="toggleClass()">
-                    <span class="burger-menu">
-                        <span class="top-bar"></span>
-                        <span class="middle-bar"></span>
-                        <span class="bottom-bar"></span>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav for-responsive">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Home Demo - 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cybersecurity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-5" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cryptocurrency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/index-6" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">ICO Landing</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
-                        </li>
-                        <li class="nav-item megamenu">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Services</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon17.png" alt="image">
-                                        Content Writing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon18.png" alt="image">
-                                        Social Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon19.png" alt="image">
-                                        Email Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon20.png" alt="image">
-                                        Lead Guideline
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon21.png" alt="image">
-                                        Content Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/services" class="nav-link" (click)="toggleClass()">
-                                        <img src="assets/img/icon/icon22.png" alt="image">
-                                        Video Marketing
-                                        <p>Learn the basics with expert resources.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Case Studies</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #2 – Default</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-style-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Style #3 - Extra</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/work-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Work Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="others-option">
-                        <a routerLink="/contact" class="default-btn style-two">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                    <div class="others-option for-responsive">
-                        <a routerLink="/contact" class="default-btn style-two" (click)="toggleClass()">
-                            <span class="ri-edit-2-line"></span>
-                            Free Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 
 </header>
