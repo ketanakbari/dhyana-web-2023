@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { AccordionModule } from "ngx-accordion";
-import { StickyNavModule } from 'ng2-sticky-nav';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
@@ -118,10 +116,8 @@ import { ServicesPageComponent } from './components/pages/services-page/services
         AppRoutingModule,
         BrowserAnimationsModule,
         NgxScrollTopModule,
-        StickyNavModule,
         CarouselModule,
         NgxSimpleCountdownModule,
-        AccordionModule,
         NgxSmartModalModule.forRoot()
     ],
     providers: [],
