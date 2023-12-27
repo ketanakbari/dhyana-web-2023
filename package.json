@@ -22,7 +22,7 @@
     "bootstrap": "^5.2.3",
     "ng2-sticky-nav": "^10.0.0",
     "ngx-accordion": "^0.0.17",
-    "ngx-owl-carousel-o": "^14.0.1",
+    "ngx-owl-carousel-o": "^17.0.0",
     "ngx-scrolltop": "^4.3.0",
     "ngx-simple-countdown": "^13.0.1",
     "ngx-smart-modal": "^7.4.1",
