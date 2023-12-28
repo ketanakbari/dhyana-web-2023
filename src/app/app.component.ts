@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, NavigationCancel, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
+import { AdminService } from './services/admin.service';
 declare let $: any;
 
 @Component({
@@ -20,8 +21,11 @@ export class AppComponent {
     routerSubscription: any;
 
     constructor(
-        private router: Router
-    ) {}
+        private router: Router,
+        private adminService:AdminService
+    ) {
+
+    }
 
     ngOnInit(){
         this.recallJsFuntions();
@@ -37,5 +41,9 @@ export class AppComponent {
             }
             window.scrollTo(0, 0);
         });
+    }
+
+    isAdmin(): boolean {
+      return this.adminService.isAdminUser();
     }
 }

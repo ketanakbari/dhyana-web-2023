@@ -16,6 +16,7 @@ import { WorkDetailsPageComponent } from './components/pages/work-details-page/w
 import { WorkStyleOnePageComponent } from './components/pages/work-style-one-page/work-style-one-page.component';
 import { WorkStyleThreePageComponent } from './components/pages/work-style-three-page/work-style-three-page.component';
 import { WorkStyleTwoPageComponent } from './components/pages/work-style-two-page/work-style-two-page.component';
+import { AdminLayoutComponent } from './components/pages/admin/admin-layout/admin-layout.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
@@ -33,6 +34,9 @@ const routes: Routes = [
     {path: 'privacy-policy', component: PrivacyPolicyPageComponent},
     {path: 'pricing', component: PricingPageComponent},
     {path: 'contact', component: ContactPageComponent},
+    {path: 'admin', component: AdminLayoutComponent,children:[
+        {path:'user',component: AdminLayoutComponent}
+    ]},
     // Here add new pages component
 
     {path: '**', component: NotFoundPageComponent} // This line will remain down from the whole pages component list
