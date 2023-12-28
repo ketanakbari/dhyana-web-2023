@@ -17,6 +17,8 @@ import { WorkStyleOnePageComponent } from './components/pages/work-style-one-pag
 import { WorkStyleThreePageComponent } from './components/pages/work-style-three-page/work-style-three-page.component';
 import { WorkStyleTwoPageComponent } from './components/pages/work-style-two-page/work-style-two-page.component';
 import { AdminLayoutComponent } from './components/pages/admin/admin-layout/admin-layout.component';
+import { UserComponent } from './components/pages/admin/user/user.component';
+import { RolesComponent } from './components/pages/admin/roles/roles.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
@@ -35,7 +37,8 @@ const routes: Routes = [
     {path: 'pricing', component: PricingPageComponent},
     {path: 'contact', component: ContactPageComponent},
     {path: 'admin', component: AdminLayoutComponent,children:[
-        {path:'user',component: AdminLayoutComponent}
+        {path:'user',component: UserComponent},
+        {path:'roles',component:RolesComponent}
     ]},
     // Here add new pages component
 

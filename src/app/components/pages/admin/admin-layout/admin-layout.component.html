@@ -1,4 +1,7 @@
 @if(isadmin()){
 <app-header></app-header>
-<app-sidebar></app-sidebar>
+<div class="admin-layout-container">
+  <app-sidebar></app-sidebar>
+  <router-outlet class="content"></router-outlet>
+</div>
 }
