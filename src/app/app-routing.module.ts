@@ -16,30 +16,41 @@ import { WorkDetailsPageComponent } from './components/pages/work-details-page/w
 import { WorkStyleOnePageComponent } from './components/pages/work-style-one-page/work-style-one-page.component';
 import { WorkStyleThreePageComponent } from './components/pages/work-style-three-page/work-style-three-page.component';
 import { WorkStyleTwoPageComponent } from './components/pages/work-style-two-page/work-style-two-page.component';
+import { AdminLayoutComponent } from './components/pages/admin/admin-layout/admin-layout.component';
+import { UserComponent } from './components/pages/admin/user/user.component';
+import { RolesComponent } from './components/pages/admin/roles/roles.component';
 
 const routes: Routes = [
-    {path: '', component: HomeDemoOneComponent},
-    {path: 'about-us', component: AboutPageComponent},
-    {path: 'services', component: ServicesDetailsPageComponent},
-    {path: 'more-services', component: ServicesPageComponent},
-    {path: 'work-style-1', component: WorkStyleOnePageComponent},
-    {path: 'work-style-2', component: WorkStyleTwoPageComponent},
-    {path: 'work-style-3', component: WorkStyleThreePageComponent},
-    {path: 'work-details', component: WorkDetailsPageComponent},
-    {path: 'blog', component: BlogPageComponent},
-    {path: 'blog-details', component: BlogDetailsPageComponent},
-    {path: 'team', component: TeamPageComponent},
-    {path: 'terms-conditions', component: TermsConditionsPageComponent},
-    {path: 'privacy-policy', component: PrivacyPolicyPageComponent},
-    {path: 'pricing', component: PricingPageComponent},
-    {path: 'contact', component: ContactPageComponent},
-    // Here add new pages component
+  { path: '', component: HomeDemoOneComponent },
+  { path: 'about-us', component: AboutPageComponent },
+  { path: 'services', component: ServicesDetailsPageComponent },
+  { path: 'more-services', component: ServicesPageComponent },
+  { path: 'work-style-1', component: WorkStyleOnePageComponent },
+  { path: 'work-style-2', component: WorkStyleTwoPageComponent },
+  { path: 'work-style-3', component: WorkStyleThreePageComponent },
+  { path: 'work-details', component: WorkDetailsPageComponent },
+  { path: 'blog', component: BlogPageComponent },
+  { path: 'blog-details', component: BlogDetailsPageComponent },
+  { path: 'team', component: TeamPageComponent },
+  { path: 'terms-conditions', component: TermsConditionsPageComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyPageComponent },
+  { path: 'pricing', component: PricingPageComponent },
+  { path: 'contact', component: ContactPageComponent },
+  {
+    path: 'admin',
+    component: AdminLayoutComponent,
+    children: [
+      { path: 'users', component: UserComponent },
+      { path: 'roles', component: RolesComponent },
+    ],
+  },
+  // Here add new pages component
 
-    {path: '**', component: NotFoundPageComponent} // This line will remain down from the whole pages component list
+  { path: '**', component: NotFoundPageComponent }, // This line will remain down from the whole pages component list
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
