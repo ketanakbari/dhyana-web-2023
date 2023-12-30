@@ -5,7 +5,6 @@ import { NavigationEnd, Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AdminService {
-  private isAdmin = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
@@ -14,15 +13,12 @@ export class AdminService {
       }
     });
   }
-  checkAdminRoute() {
-    const isAdminRoute = this.router.url.startsWith('/admin');
-    this.setAdminStatus(isAdminRoute);
-  }
-  isAdminUser(): boolean {
-    return this.isAdmin;
+
+  checkAdminRoute(): boolean {
+    return this.router.url.startsWith('/admin');
   }
 
-  setAdminStatus(isAdmin: boolean): void {
-    this.isAdmin = isAdmin;
+  isAdminUser(): boolean {
+    return this.checkAdminRoute();
   }
 }

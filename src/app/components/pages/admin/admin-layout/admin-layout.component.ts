@@ -13,7 +13,8 @@ import { AdminService } from 'src/app/services/admin.service';
 })
 export class AdminLayoutComponent {
   constructor(private adminService: AdminService) {}
-  isadmin(): boolean {
+
+  isAdmin(): boolean {
     return this.adminService.isAdminUser();
   }
 }
