@@ -57,6 +57,7 @@ import { WorkStyleThreePageComponent } from './components/pages/work-style-three
 import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
 import { ServicesPageComponent } from './components/pages/services-page/services-page.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
     declarations: [
@@ -118,7 +119,8 @@ import { ServicesPageComponent } from './components/pages/services-page/services
         NgxScrollTopModule,
         CarouselModule,
         NgxSimpleCountdownModule,
-        NgxSmartModalModule.forRoot()
+        NgxSmartModalModule.forRoot(),
+        StoreModule.forRoot({}, {})
     ],
     providers: [],
     bootstrap: [AppComponent]
