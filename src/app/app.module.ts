@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
@@ -58,6 +58,7 @@ import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-pa
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
 import { ServicesPageComponent } from './components/pages/services-page/services-page.component';
 import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
     declarations: [
@@ -120,7 +121,8 @@ import { StoreModule } from '@ngrx/store';
         CarouselModule,
         NgxSimpleCountdownModule,
         NgxSmartModalModule.forRoot(),
-        StoreModule.forRoot({}, {})
+        StoreModule.forRoot({}, {}),
+        StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() })
     ],
     providers: [],
     bootstrap: [AppComponent]
